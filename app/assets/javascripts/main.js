@@ -1,9 +1,9 @@
 var DEBUG = false;
-var SPEED = 490;
+var SPEED = 450;
 var GRAVITY = 40;
 var FLAP = 620;
 var SPAWN_RATE = 1 / 1;
-var OPENING = 134;
+var OPENING = 140;
 
 WebFontConfig = {
     google: { families: [ 'Press+Start+2P::latin' ] },
@@ -185,8 +185,8 @@ function reset() {
     gameOver = false;
     score = 0;
     credits.renderable = true;
-    scoreText.setText("Flappy Bird?");
-    instText.setText("TOUCH TO FLAP\nBIRDIE WINGS");
+    scoreText.setText("Ploppy Kitty?");
+    instText.setText("CLICK TO START\nPLOPPY KITTY");
     gameOverText.renderable = false;
     birdie.body.allowGravity = false;
     birdie.angle = 0;
@@ -294,7 +294,7 @@ function addScore(_, inv) {
 
 function setGameOver() {
     gameOver = true;
-    instText.setText("TOUCH BIRDIE\nTO TRY AGAIN");
+    instText.setText("TOUCH KITTY\nTO TRY AGAIN");
     instText.renderable = true;
     var hiscore = window.localStorage.getItem('hiscore');
     hiscore = hiscore ? hiscore : score;
