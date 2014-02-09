@@ -52,7 +52,7 @@ function preload() {
             fence: ['assets/fence.png']
         },
         audio: {
-            flap: ['assets/flap.wav'],
+            flap: ['assets/meow.wav'],
             score: ['assets/score.wav'],
             hurt: ['assets/hurt.wav']
         }
@@ -91,7 +91,7 @@ function create() {
     game.world.height = screenHeight;
     // Draw bg
     bg = game.add.graphics(0, 0);
-    bg.beginFill(0xDDEEFF, 1);
+    bg.beginFill(0x3F1E5E, 1);
     bg.drawRect(0, 0, game.world.width, game.world.height);
     bg.endFill();
     // Credits 'yo
